@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        folder:
+          - lesson-01
+          - lesson-02
+          - lesson-03
+          - lesson-04
+          - lesson-05
+          - lesson-06
+          - lesson-07
+          - lesson-08
+          - lesson-09
+          - lesson-10
+          - lesson-11
+          - lesson-12
+          - docmate-complete
+    defaults:
+      run:
+        working-directory: code/${{ matrix.folder }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+      - name: Install Chromium for the browser tests
+        if: hashFiles(format('code/{0}/tests/test_browser.py', matrix.folder)) != ''
+        run: uv run playwright install --with-deps chromium
+      # Ollama is not available on CI, so the live tests skip themselves.
+      - run: uv run pytest -q

@@ -1,0 +1,13 @@
+Wi-Fi and printing
+
+Free Wi-Fi is available everywhere in the library. The network is called MapleGuest.
+The password changes on the first day of every month; ask at the front desk or look at the
+screen next to the entrance.
+
+Printing and copying:
+black and white costs 10 cents per page, colour costs 50 cents per page.
+You can print from the library computers or send a file to print@maplegrove-library.example
+and pick it up at the desk within 3 days.
+
+The library computers log you out after 2 hours. You can book a computer for longer
+at the front desk.

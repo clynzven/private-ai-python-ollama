@@ -1,0 +1,12 @@
+[
+  {"question": "How long can I borrow a DVD?", "source": "borrowing-rules.md", "words": ["1 week"]},
+  {"question": "What does colour printing cost?", "source": "wifi-and-printing.txt", "words": ["50 cents"]},
+  {"question": "When is story time for toddlers?", "source": "events-autumn.md", "words": ["10:30"]},
+  {"question": "What time does the library close on Saturday?", "source": "opening-hours.md", "words": ["16:00"]},
+  {"question": "Do I need a course before using the 3D printer?", "source": "makerspace-safety.pdf", "words": ["safety course"]},
+  {"question": "How many times can I renew a book?", "source": "borrowing-rules.md", "words": ["twice"]},
+  {"question": "What is the Wi-Fi network called?", "source": "wifi-and-printing.txt", "words": ["mapleguest"]},
+  {"question": "Can my 15-year-old use the laser cutter?", "source": "makerspace-safety.pdf", "words": ["adults"]},
+  {"question": "As an adult, I return 2 books 30 days late. How much do I pay?", "source": "borrowing-rules.md", "words": ["10 euros"]},
+  {"question": "Does the library have a cafe?", "source": null, "words": ["don't know"]}
+]

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocMate</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <button id="new-chat">+ New chat</button>
+    <nav id="chats"></nav>
+    <section id="docs">
+      <h3>Your documents</h3>
+      <ul id="doc-list"></ul>
+      <label class="upload">+ Add a document<input id="file" type="file" accept=".txt,.md,.pdf" hidden></label>
+      <p class="hint">or drop a file anywhere</p>
+    </section>
+  </aside>
+
+  <main>
+    <header>
+      <select id="model" title="Model"></select>
+      <label class="toggle"><input id="use-docs" type="checkbox" checked> Use my documents</label>
+      <span class="private">● Private: runs on this computer</span>
+    </header>
+    <div id="messages">
+      <div class="empty" id="empty">
+        <h1>DocMate</h1>
+        <p>Ask anything about your documents.</p>
+      </div>
+    </div>
+    <form id="ask">
+      <textarea id="input" rows="1" placeholder="Message DocMate..." autofocus></textarea>
+      <button id="send" type="submit">Send</button>
+      <button id="stop" type="button" hidden>Stop</button>
+    </form>
+  </main>
+
+  <div id="drop">Drop to add to your documents</div>
+  <div id="toast" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
